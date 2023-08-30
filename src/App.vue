@@ -1,17 +1,31 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <div>
+    <!-- <MainHeader></MainHeader> -->
+    <Snippets></Snippets>
+    <nav>
+      <router-link to="/">Hello world</router-link> |
+      <router-link to="/about">Second</router-link>
+    </nav>
+    <router-view />
+  </div>
 </template>
+
+<script>
+// import MainHeader from "@/components/MainHeader.vue";
+import Snippets from "@/components/Snippets.vue";
+export default {
+  components: {
+    // MainHeader,
+    Snippets,
+  },
+};
+</script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 

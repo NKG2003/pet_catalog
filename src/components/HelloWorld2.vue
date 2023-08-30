@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "HelloWorld2",
   props: {
     name: String,
   },
@@ -16,6 +16,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h1 {
-  color: red;
+  color: blue;
 }
 </style>
