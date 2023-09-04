@@ -1,23 +1,17 @@
 <template>
   <div>
-    <!-- <MainHeader></MainHeader> -->
-    <Snippets></Snippets>
     <nav>
-      <router-link to="/">Hello world</router-link> |
-      <router-link to="/about">Second</router-link>
+      <router-link class="routerLink" to="/plusPet">+ Pet </router-link> |
+      <router-link class="routerLink" to="/">MyPet</router-link> |
+      <router-link class="routerLink" to="/getPet">GET PET</router-link>
     </nav>
     <router-view />
   </div>
 </template>
 
 <script>
-// import MainHeader from "@/components/MainHeader.vue";
-import Snippets from "@/components/Snippets.vue";
 export default {
-  components: {
-    // MainHeader,
-    Snippets,
-  },
+  components: {},
 };
 </script>
 
@@ -30,7 +24,8 @@ export default {
 }
 
 nav {
-  padding: 30px;
+  text-align: center;
+  padding: 20px;
 }
 
 nav a {
@@ -40,5 +35,14 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.routerLink {
+  justify-content: space-between;
+  font-size: 24px;
+  text-decoration: none;
+}
+.routerLink:hover {
+  text-decoration: underline;
 }
 </style>
